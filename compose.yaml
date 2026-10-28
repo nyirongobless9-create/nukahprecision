@@ -1,0 +1,22 @@
+services:
+  shop:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: "3000"
+      DB_PATH: /app/data/shop.sqlite
+      PUBLIC_URL: ${PUBLIC_URL:-http://localhost:3000}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set a secure admin password}
+      SESSION_SECRET: ${SESSION_SECRET:?Set a random signing secret}
+      SHOP_PHONE: ${SHOP_PHONE:-}
+      SHOP_EMAIL: ${SHOP_EMAIL:-}
+      SHOP_LOCATION: ${SHOP_LOCATION:-Malawi}
+      BANK_PAYMENT_INSTRUCTIONS: ${BANK_PAYMENT_INSTRUCTIONS:-}
+      AIRTEL_PAYMENT_INSTRUCTIONS: ${AIRTEL_PAYMENT_INSTRUCTIONS:-}
+      MPAMBA_PAYMENT_INSTRUCTIONS: ${MPAMBA_PAYMENT_INSTRUCTIONS:-}
+    volumes:
+      - shop_data:/app/data
+volumes:
+  shop_data:

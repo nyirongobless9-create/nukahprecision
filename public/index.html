@@ -1,0 +1,338 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b37">
+  <meta name="description" content="NUKAH Precision Works Limited — engraving, card printing, key making and automotive key programming in Lilongwe, Malawi.">
+  <title>NUKAH Precision Works Limited</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <span class="monogram">N</span>
+      <span>NUKAH<small>PRECISION WORKS LIMITED</small></span>
+    </a>
+
+    <button id="menu" class="menu" aria-label="Toggle navigation">☰</button>
+
+    <nav id="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#shop">Shop</a>
+      <a href="#track">Track order</a>
+      <a href="#contact">Contact</a>
+      <button class="button gold" id="openCart">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero active-section" id="home">
+    <div class="container heroGrid">
+      <div>
+        <p class="eyebrow">ENGRAVE · IDENTIFY · SECURE</p>
+        <h1>Precision work.<br><em>Made for you.</em></h1>
+        <p>Premium engraving, professional identification cards, key cutting and automotive key programming in Malawi.</p>
+
+        <div class="actions">
+          <a class="button gold" href="#shop">Shop products →</a>
+          <a class="button ghost" href="#contact">Talk to us</a>
+        </div>
+
+        <div class="heroFoot">
+          Custom orders · Business solutions · Secure service
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" hidden>
+    <div class="container about">
+      <div>
+        <p class="eyebrow dark">ABOUT NUKAH</p>
+        <h2>Built around accuracy, trust and service.</h2>
+        <p>NUKAH Precision Works Limited provides engraving, card printing, key duplication and automotive key programming services. Our focus is clear communication, careful workmanship and responsible handling of customer requirements.</p>
+        <p>For keys and vehicle programming, proof of ownership or appropriate authorisation may be required before work begins.</p>
+
+        <div class="valueRow">
+          <span>Precision</span>
+          <span>Quality</span>
+          <span>Customer focus</span>
+        </div>
+      </div>
+
+      <img src="/assets/brand.png" alt="NUKAH Precision Works branding">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section" hidden>
+    <div class="container">
+      <p class="eyebrow dark">OUR SPECIALTIES</p>
+      <h2>Everything precision, in one place.</h2>
+      <p class="lead">Practical services for individuals, companies, schools and institutions.</p>
+
+      <div class="serviceGrid">
+        <article class="service">
+          <img src="/assets/service-0.png" alt="Engraving">
+          <div><h3>Engraving</h3></div>
+        </article>
+
+        <article class="service">
+          <img src="/assets/service-1.png" alt="Card printing">
+          <div><h3>Card Printing</h3></div>
+        </article>
+
+        <article class="service">
+          <img src="/assets/service-2.png" alt="Key making">
+          <div><h3>Key Making</h3></div>
+        </article>
+
+        <article class="service">
+          <img src="/assets/service-3.png" alt="Key programming">
+          <div><h3>Key Programming</h3></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="section pale" hidden>
+    <div class="container">
+      <div class="sectionTop">
+        <div>
+          <p class="eyebrow dark">THE NUKAH STORE</p>
+          <h2>Browse &amp; order</h2>
+          <p class="lead">Prices are shown in Malawi kwacha (MWK). Custom jobs can be requested for quotation.</p>
+        </div>
+        <span class="smallTag">Secure order recording</span>
+      </div>
+
+      <div class="toolbar">
+        <div id="filters" class="filters"></div>
+        <input id="search" type="search" placeholder="Search products…" aria-label="Search products">
+      </div>
+
+      <div id="products" class="productGrid">
+        <p>Loading products…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRACK ORDER -->
+  <section class="section pale" id="track" hidden>
+    <div class="container narrow">
+      <p class="eyebrow dark">YOUR ORDER</p>
+      <h2>Track an order</h2>
+      <p>Enter the order reference and the email used at checkout.</p>
+
+      <form id="trackForm" class="form">
+        <label>
+          Order reference
+          <input name="id" required placeholder="NPW-20261012-XXXXXXXX">
+        </label>
+
+        <label>
+          Email address
+          <input name="email" type="email" required>
+        </label>
+
+        <button class="button navy" type="submit">Check status</button>
+      </form>
+
+      <div id="trackResult" class="notice" role="status"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section pale" id="contact" hidden>
+    <div class="container">
+      <p class="eyebrow dark">GET IN TOUCH</p>
+      <h2>Contact NUKAH PRECISION WORKS LIMITED</h2>
+      <p class="lead">
+        Have a question, need a quotation, or want to place an order?
+        Contact us using any of the details below.
+      </p>
+
+      <div class="contactGrid">
+        <div>
+          <h3>We're here to help</h3>
+          <p>
+            Reach out to us about our products, services, orders,
+            and business enquiries.
+          </p>
+
+          <div class="valueRow">
+            <span>Professional Service</span>
+            <span>Customer Support</span>
+            <span>Quality Work</span>
+          </div>
+
+          <p class="subtle">
+            For vehicle key programming, proof of ownership or
+            appropriate authorisation may be required.
+          </p>
+        </div>
+
+        <div class="contactBox">
+          <h3>Our Contact Details</h3>
+
+          <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:+265991169839">+265 991 169 839</a>
+          </p>
+
+          <p>
+            <strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/265991169839" target="_blank" rel="noopener noreferrer">Chat with us on WhatsApp</a>
+          </p>
+
+          <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:nukahprecisionworks@gmail.com">nukahprecisionworks@gmail.com</a>
+          </p>
+
+          <p>
+            <strong>Location:</strong><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Area+18B%2C+Lilongwe%2C+Malawi" target="_blank" rel="noopener noreferrer">Area 18B, Lilongwe, Malawi — View map</a>
+          </p>
+
+          <hr>
+
+          <h3>Business Hours</h3>
+          <p><strong>Monday – Friday:</strong><br>8:00 AM – 5:00 PM</p>
+          <p><strong>Saturday:</strong><br>8:00 AM – 1:00 PM</p>
+          <p><strong>Sunday:</strong><br>Closed</p>
+
+          <a class="button gold full" href="https://wa.me/265991169839" target="_blank" rel="noopener noreferrer">Contact Us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footerInner">
+    <div>
+      <strong>NUKAH PRECISION WORKS LIMITED</strong>
+      <p class="subtle">Area 18B, Lilongwe, Malawi</p>
+      <p class="subtle">
+        © <span id="year"></span>
+        NUKAH PRECISION WORKS LIMITED. All rights reserved.
+      </p>
+    </div>
+
+    <div>
+      <p><a href="tel:+265991169839">+265 991 169 839</a></p>
+      <p><a href="mailto:nukahprecisionworks@gmail.com">nukahprecisionworks@gmail.com</a></p>
+      <p><a href="https://wa.me/265991169839" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></p>
+      <p><a href="#contact">Contact &amp; Business Hours</a></p>
+      <p><a href="/admin.html">Staff login</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- SHOPPING CART -->
+<div id="overlay" class="overlay" hidden>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="drawerHead">
+      <h2>Your cart</h2>
+      <button class="iconButton" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+
+    <div id="cartLines"></div>
+
+    <div class="total">
+      <strong>Subtotal</strong>
+      <strong id="subtotal">MWK 0</strong>
+    </div>
+
+    <p class="subtle">Delivery costs, if applicable, are confirmed separately.</p>
+    <button id="goCheckout" class="button gold full">Continue to checkout</button>
+    <div id="cartNotice" class="notice"></div>
+  </aside>
+</div>
+
+<!-- CHECKOUT -->
+<div id="checkoutOverlay" class="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Checkout">
+    <div class="drawerHead">
+      <h2>Checkout</h2>
+      <button id="closeCheckout" class="iconButton" aria-label="Close checkout">✕</button>
+    </div>
+
+    <p class="subtle">Orders are recorded securely on our server. Payment is not automatically collected by this website.</p>
+
+    <form id="checkoutForm" class="form">
+      <label>
+        Full name
+        <input name="name" autocomplete="name" required minlength="2">
+      </label>
+
+      <label>
+        Email
+        <input name="email" type="email" autocomplete="email" required>
+      </label>
+
+      <label>
+        Phone / WhatsApp
+        <input name="phone" type="tel" autocomplete="tel" required>
+      </label>
+
+      <label>
+        Fulfilment
+        <select name="delivery" id="delivery">
+          <option value="collection">Collection</option>
+          <option value="delivery">Request delivery</option>
+        </select>
+      </label>
+
+      <label id="addressWrap" hidden>
+        Delivery address
+        <textarea name="address" rows="2"></textarea>
+      </label>
+
+      <label>
+        Payment method
+        <select name="method" id="paymentMethod" required></select>
+      </label>
+
+      <p class="paymentInfo" id="paymentInfo"></p>
+
+      <label>
+        Payment reference (optional)
+        <input name="payment_reference" placeholder="Transaction/reference number">
+      </label>
+
+      <label>
+        Additional details
+        <textarea name="notes" rows="3" placeholder="Engraving text, quantity notes, card specifications, etc."></textarea>
+      </label>
+
+      <div class="total">
+        <span>Order subtotal</span>
+        <strong id="checkoutTotal"></strong>
+      </div>
+
+      <button id="placeOrder" class="button gold full" type="submit">Place order</button>
+      <div id="checkoutNotice" class="notice" role="status"></div>
+    </form>
+  </div>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
